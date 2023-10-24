@@ -182,7 +182,7 @@ header nav {
 .sns-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -236,17 +236,13 @@ small {
     gap: 0px;
   }
 
-  .skills {
-    padding: 50px 0 0 0;
-  }
-
   .skills li img {
     margin: 0 auto;
     display: block;
   }
 
-  .skills li:nth-of-type(3n) {
-    margin-bottom: 80px;
+  .skills li:nth-of-type(3n+4) {
+    margin-top: 80px;
   }
 
 }
@@ -304,6 +300,10 @@ small {
 
   .sns {
     padding: 50px 0;
+  }
+
+  .sns-container {
+    flex-wrap: wrap;
   }
 
   .sns-container li {
