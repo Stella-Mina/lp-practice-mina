@@ -103,6 +103,7 @@ header nav {
 
 .work-txt p {
   font-size: 15px;
+  line-height: 18px;
   word-break: break-all;
 }
 
@@ -122,6 +123,7 @@ header nav {
 }
 
 .skills li img {
+  display: block;
   width: 300px;
   height: 300px;
   opacity: .7;
@@ -140,8 +142,6 @@ header nav {
 .plan-container {
   border-collapse: collapse;
   width: 100%;
-  font-size: 16px;
-  line-height: 26px;
   table-layout: fixed;
 }
 
@@ -151,9 +151,12 @@ header nav {
 
 .plan-container td,
 .plan-container th {
+  font-size: 16px;
+  line-height: 26px;
   text-align: center;
   padding: 10px;
   border-left: 2px solid #fff;
+  word-wrap: break-word;
 }
 
 .plan-container td:first-child,
@@ -215,7 +218,11 @@ small {
 @media (max-width: 1199px) {
 
   .inner {
-    padding: 0 15px;
+    max-width: 97%;
+  }
+
+  .keyvisual {
+    padding: 250px 0;
   }
 
   .work {
@@ -238,7 +245,6 @@ small {
 
   .skills li img {
     margin: 0 auto;
-    display: block;
   }
 
   .skills li:nth-of-type(3n+4) {
@@ -281,6 +287,10 @@ small {
     top: 40px;
   }
 
+  .keyvisual {
+    padding: 200px 0;
+  }
+
   .ttl h1 {
     font-size: 40px;
   }
@@ -289,7 +299,7 @@ small {
     font-size: 30px;
   }
 
-  .plan-container {
+  .plan-container th {
     font-size: 14px;
     line-height: 22px;
   }
@@ -299,7 +309,7 @@ small {
   }
 
   .sns {
-    padding: 50px 0;
+    padding: 50px 15px;
   }
 
   .sns-container {
